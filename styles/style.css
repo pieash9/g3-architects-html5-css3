@@ -344,6 +344,7 @@
      }
      .footer, .work-image , .work-items{
         width: 100%;
+        text-align: center;
      }
      .work-container{
         flex-direction: column-reverse;
