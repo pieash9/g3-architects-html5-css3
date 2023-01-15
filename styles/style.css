@@ -1,0 +1,195 @@
+/* fonts link  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    background: #FFF4E7
+}
+.btn-primary{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    background: #FF900E;
+    border-radius: 8px;
+    border: none;
+    padding: 20px 25px;
+}
+/* header style  */
+.nav-container{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-bar-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+.nav-bar-items ul{
+    display: flex;
+}
+.nav-bar-items ul li{
+    list-style: none;
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+}
+/* Brand New Group of Architects style  */
+.group-architects-container{
+    text-align: center;
+    margin-bottom: 130px;
+}
+.group-architects{
+    width: 50%;
+    margin: auto;
+}
+.group-architects-title{
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+}
+.group-architects-description{
+    color: #727272;
+    margin: 30px 0;
+}
+.group-architects-image{
+    margin-top:50px ;
+}
+.group-architects-image img{
+    width: 80%;
+    margin: auto;
+}
+
+/* Quick list of Our Features style  */
+.quick-list-container{
+    text-align: center;
+}
+.quick-list{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+.quick-list-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 65%;
+    gap: 24px;
+}
+.quick-list-image{
+    width: 300px;
+    height: 300px;
+}
+.quick-list-detail{
+    width: 35%;
+    margin-left: 70px;
+    text-align: left;
+}
+.quick-list-title{
+    font-weight: 500;
+    font-size: 45px;
+    color: #131313;
+}
+.quick-list-title-color-1{
+    color: #727272;
+}
+.quick-list-title-color-2{
+    color: #FF900E;
+}
+.quick-list-description{
+    color: #727272;
+    margin: 25px 0;
+}
+/* Features you will love & enjoy style  */
+.features-container{
+    margin: 130px 0;
+}
+.feature-items{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.features-item{
+    width: 50%;
+    margin-right: 20px;
+}
+.feature-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    border-left: 5px solid #FF900E; ;
+}
+.feature-description{
+    color: #727272;
+    margin-top: 24px;
+}
+.feature-point-title{
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+}
+.feature-point-description{
+    color: #727272;
+}
+.feature-point{
+    padding: 20px;
+    margin: 20px 0;
+}
+.feature-point-title{
+    margin-bottom: 10px;
+}
+.features-btn{
+    font-weight: 700;
+    font-size: 65px;
+    padding: 32px;
+    margin-top: -133px;
+}
+.features-btn .features-btn-experience{
+    font-weight: 500;
+    font-size: 25px;
+    background-color: #FF900E;
+}
+/*----------------- 
+    media queries
+------------------  */
+/* mobile device */
+
+@media only screen and (max-width:767px){
+    .nav-bar, .nav-bar-items ul, .quick-list
+    , .feature-items{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .group-architects{
+        width: 90%;
+        margin: 0 20px ;
+    }
+    .group-architects-image img{
+        width: 90%;
+    }
+    .quick-list-images{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+    }
+    .quick-list-detail , .features-item{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        margin: 50px 0;
+    }
+     .features-image img{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+     }
+     .features-btn{
+        margin-top: 20px;
+     }
+}
